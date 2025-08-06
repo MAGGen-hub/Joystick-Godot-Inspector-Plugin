@@ -19,12 +19,19 @@ var basic_joystick:=Vector2(0,0)
 
 Configuration parameters:
 
-- `grid:X` - Controls type of joystick coordinate grid. `X` can be set `basic` and `radial` values. Default is `basic`
-- `limit:X` - positive float value, specifies maximum value that can be set to `Vector2` property with a joystick. Default is `2.0`, minimal is `0.002`.
-- `div:X` - positive float value, specifies size of single cell in coordinate grid. Default is `1.0`, minimal is `0.001`.
-- `keep_editor` - boolean value, if `true` displays default `Vector2` property editor under joystick control.
+- `grid:X` - Controls type of joystick coordinate grid.\
+`X` can be set `basic` and `radial` values. Default is `basic`.
+- `limit:X` - positive float value, specifies maximum value that can be set to\
+`Vector2` property with it's joystick. Default is `2.0`, minimal is `0.002`.
+- `div:X` - positive float value, specifies size of single cell in coordinate grid.\
+Default is `1.0`, minimal is `0.001`.
+- `keep_editor` - boolean value, if set to `true` displays\
+default `Vector2` property editor under joystick control.
 
 **Additional feature:** Holding `SHIFT` while using joystick will magnet output value to nearest grid axis or place where axises cross. 
-Works with on both grid types, but especially usefull with `radial` one. Makes things spiiinnnnn...
+Works with on both grid types, but especially usefull with `radial` one.\
+Makes things spiiinnnnn...
 
 ![Usage Example](https://raw.githubusercontent.com/MAGGen-hub/Joystick-Godot-Inspector-Plugin/refs/heads/master/pictures/joystick_plugin_demo.gif)
+
+**P.S.** Project has built-in demo. Remove it with Godot asset downloader config, if you don't want it. Or delete `demo` folder manualy.
