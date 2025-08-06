@@ -3,9 +3,11 @@
 
 Plugin for Godot Game Engine created to control `Vector2` properties with virtual joystick-like control.
 
+<br/>
+
 Works like default Godot `int` or `float` properties slider, but in two dimensions.\
 Can be used to smoothly adjust 2d values with your mouse in selected range.
-<br/><br/><br/>
+<br/><br/>
 
 To enable joystick for Vector2 property use next code:
 ```gdscript
