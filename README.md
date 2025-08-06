@@ -1,4 +1,5 @@
 # Joystick Inspector Plugin
+<img src="https://raw.githubusercontent.com/MAGGen-hub/Joystick-Godot-Inspector-Plugin/refs/heads/master/pictures/logo.png" style="width: 25%; overflow: hidden;" align="right">
 
 Plugin for Godot Game Engine created to control `Vector2` properties with virtual joystick-like control.
 
@@ -10,7 +11,7 @@ To enable joystick for Vector2 property use next code:
 @export_custom(PROPERTY_HINT_TYPE_STRING,"") #insert joystick config or leave empty
 var basic_joystick:=Vector2(0,0)
 ```
-
+***
 **Configuring joystick:** Export `hint_string` can be used to configure joystick behaviour.
 
 Configuration parameters:
@@ -20,4 +21,7 @@ Configuration parameters:
 - `div:X` - positive float value, specifies size of single cell in coordinate grid. Default is `1.0`, minimal is `0.001`.
 - `keep_editor` - boolean value, if `true` displays default `Vector2` property editor under joystick control.
 
-**Additional feature:** Holding `SHIFT` while using joystick will magnet output value to nearest grid axis or place where axises cross. Works with both grid types.
+**Additional feature:** Holding `SHIFT` while using joystick will magnet output value to nearest grid axis or place where axises cross. 
+Works with on both grid types, but especially usefull with `radial` one. Makes things spiiinnnnn...
+
+![Usage Example](https://raw.githubusercontent.com/MAGGen-hub/Joystick-Godot-Inspector-Plugin/refs/heads/master/pictures/joystick_plugin_demo.gif)
